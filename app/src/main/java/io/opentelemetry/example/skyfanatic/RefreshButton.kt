@@ -1,5 +1,7 @@
 package io.opentelemetry.example.skyfanatic
 
+import android.os.AsyncTask
+import android.os.Looper
 import android.util.Log
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
@@ -12,13 +14,16 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
+val iconFetcher by lazy { IconFetcher() }
+
 @Composable
 fun RefreshButton(skyItemState: MutableState<String>){
     Button(
         onClick = {
             Log.d("sky-fanatic", "click")
-            val item = fetchAnotherItem()
-            skyItemState.value = item
+            iconFetcher.fetch {
+                skyItemState.value = it
+            }
         },
         modifier = Modifier.padding(20.dp),
         colors = ButtonDefaults.buttonColors(containerColor = Color.DarkGray),
@@ -30,6 +35,3 @@ fun RefreshButton(skyItemState: MutableState<String>){
     )
 }
 
-fun fetchAnotherItem(): String {
-    return "X"
-}
