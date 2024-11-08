@@ -7,6 +7,7 @@ const PORT = 9000;
 
 app.get('/item', function (req, res) {
   const item = pickItem();
+  console.log(`Returning ${item}`);
   res.send(item)
 })
 

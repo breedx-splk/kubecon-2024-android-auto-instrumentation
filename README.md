@@ -12,7 +12,7 @@ Fire up jaeger:
 Run the backend server:
 ```bash
 cd server
-$ node -r ./otel.js server.js
+$ node server.js 2>/dev/null
 ```
 
 To view telemetry in Jaeger:
