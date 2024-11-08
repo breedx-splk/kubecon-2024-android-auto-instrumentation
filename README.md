@@ -14,3 +14,6 @@ Run the backend server:
 cd server
 $ node -r ./otel.js server.js
 ```
+
+To view telemetry in Jaeger:
+http://localhost:16686
