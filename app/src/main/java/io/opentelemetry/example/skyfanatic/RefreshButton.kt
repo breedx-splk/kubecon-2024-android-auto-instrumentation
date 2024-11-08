@@ -1,7 +1,5 @@
 package io.opentelemetry.example.skyfanatic
 
-import android.os.AsyncTask
-import android.os.Looper
 import android.util.Log
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button

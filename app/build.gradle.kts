@@ -30,6 +30,7 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+        isCoreLibraryDesugaringEnabled = true
     }
     kotlinOptions {
         jvmTarget = "11"
@@ -50,6 +51,10 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.okhttp)
+    implementation(libs.otel.android.agent)
+    implementation(libs.otel.exporter.otlp)
+
+    coreLibraryDesugaring(libs.desugarJdkLibs)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
