@@ -1,5 +1,7 @@
-const express = require('express')
-const app = express()
+'use strict'
+import * as otel from './otel.js';
+import express from 'express';
+const app = express();
 
 const PORT = 9000;
 
