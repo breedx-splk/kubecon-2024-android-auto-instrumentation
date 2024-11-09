@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.bytebuddy)
 }
 
 android {
@@ -53,6 +54,8 @@ dependencies {
     implementation(libs.okhttp)
     implementation(libs.otel.android.agent)
     implementation(libs.otel.exporter.otlp)
+    implementation(libs.otel.android.okhttp.lib)
+    byteBuddy(libs.otel.android.okhttp.agent)
 
     coreLibraryDesugaring(libs.desugarJdkLibs)
 

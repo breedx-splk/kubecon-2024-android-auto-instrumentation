@@ -3,7 +3,6 @@ package io.opentelemetry.example.skyfanatic
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import java.util.concurrent.Executors
-import java.util.function.Consumer
 
 fun makeClient(): OkHttpClient {
     return OkHttpClient()
