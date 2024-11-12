@@ -55,7 +55,7 @@ dependencies {
     implementation(libs.otel.android.agent)
     implementation(libs.otel.exporter.otlp)
     implementation(libs.otel.android.okhttp.lib)
-    byteBuddy(libs.otel.android.okhttp.agent)
+//    byteBuddy(libs.otel.android.okhttp.agent)
 
     coreLibraryDesugaring(libs.desugarJdkLibs)
 
