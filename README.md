@@ -4,6 +4,9 @@ This repo contains a demo that supports supports the
 "Built-Time Auto-Instrumentation for Android" talk
 at Kubecon NA, Salt Lake City, UT, 2024.
 
+Description and sched page is 
+[here](https://colocatedeventsna2024.sched.com/event/1izsy/build-time-auto-instrumentation-in-android-jason-plumb-splunk).
+
 Google slides deck is 
 [here](https://docs.google.com/presentation/d/1gHyeWBtTRG-ZxJpu0QIefLr4wi15B91C/edit?usp=sharing&ouid=113208723375802417212&rtpof=true&sd=true).
 
